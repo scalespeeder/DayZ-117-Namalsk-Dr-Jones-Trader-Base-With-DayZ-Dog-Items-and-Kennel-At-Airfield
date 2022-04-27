@@ -1,0 +1,191 @@
+// ------------------------------------------------------ Trader Markers -------------------------------------------------------
+
+
+// Namalsk Airfield:
+
+<TraderMarker> 			0 									// Trader ID
+<TraderMarkerPosition>	6331.5498046875,                20.700000762939454,                9485.33984375	// Coordinate X, 	Coordinate Y, 	Coordinate Z
+<TraderMarkerSafezone>	80									// Safezone Radius
+
+<TraderMarker> 			1
+<TraderMarkerPosition>	 6328.759765625,                20.72130012512207,                9485.490234375
+<TraderMarkerSafezone>	80
+
+<TraderMarker> 			2
+<TraderMarkerPosition>	6330.93017578125,                20.742000579833986,                9479.849609375
+<TraderMarkerSafezone>	80
+
+<TraderMarker> 			3
+<TraderMarkerPosition>	6329.97021484375,                20.766199111938478,                9477.51953125
+<TraderMarkerSafezone>	80
+
+<TraderMarker> 			4
+<TraderMarkerPosition>	6331.81005859375,                20.747699737548829,                9472.919921875
+<TraderMarkerSafezone>	30
+
+<TraderMarker> 			5
+<TraderMarkerPosition>	 6331.1201171875,                20.649999618530275,                9488.5
+<TraderMarkerSafezone>	30
+<VehicleSpawn>			  6315.52001953125,                20.62849998474121,                9491.5498046875	// Vehicle Spawnpoint for Trader; 	Coordinate X, 	Coordinate Y, 	Coordinate Z (optional)
+<VehicleSpawnOri>		85.04059600830078,                0.0,                0.0		// Vehicle Spawnpoint Orientation; 	Yaw, 			Pitch, 			Roll	 	 (optional)
+
+
+// TBC Trader:
+
+// <TraderMarker> 			0
+// <TraderMarkerPosition>	8354.06,    293.143,    5995.87
+// <TraderMarkerSafezone>	80
+
+// <<TraderMarker> 			1
+// <<TraderMarkerPosition>	8357.55,    293.143,    5995.26
+// <<TraderMarkerSafezone>	80
+
+// <<TraderMarker> 			2
+// <<TraderMarkerPosition>	8359.22,    292.034,    5973.69
+// <<TraderMarkerSafezone>	80
+
+// <<TraderMarker> 			3
+// <<TraderMarkerPosition>	8354.61,    292.034,    5967.63
+// <<TraderMarkerSafezone>	80
+
+// <<TraderMarker> 			4
+// <<TraderMarkerPosition>	8370.48,	293.277,	5994.52
+// <<TraderMarkerSafezone>	30
+
+// <<TraderMarker> 			5
+// <<TraderMarkerPosition>	8365.63,	292.012,	5977.71
+// <<TraderMarkerSafezone>	80
+// <<VehicleSpawn>			 8726.5595703125,                288.17498779296877,                8071.2001953125
+// <<VehicleSpawnOri>		 -67.26280212402344,                7.599999904632568,                0.0
+
+
+
+// ------------------------------------------------------ Objects to Spawn ------------------------------------------------------
+	
+
+
+// Namalsk Airfield:
+
+<Object> dog_shed_small_static
+<ObjectPosition>  6324.419921875,                20.71150016784668,                9477.5498046875
+<ObjectOrientation> 179.16099548339845,                0.0,                0.0
+
+<Object> 			SurvivorF_Irena						// Classname consumer trader
+<ObjectPosition>	6331.5498046875,                20.700000762939454,                9485.33984375		// Coordinate X, 	Coordinate Y, 	Coordinate Z
+<ObjectOrientation>	 -90.0,                0.0,                0.0			// Yaw, 			Pitch, 			Roll
+//<ObjectAttachment>	NPC_DUMMY						// Add this if you are using an non Character Object for an Trader (like Vending Machines, etc.). It is needed to make the User Action for the Trading Menu work.
+<ObjectAttachment>	BoxCerealCrunchin					// Add an Item to the Traders Inventory;
+<ObjectAttachment>	SurgicalGloves_White
+<ObjectAttachment>	Bandana_Polkapattern
+<ObjectAttachment>	MiniDress_PinkChecker
+<ObjectAttachment>	DressShoes_White
+
+<Object> 			SurvivorF_Keiko						// Hardware Trader
+<ObjectPosition>	6328.759765625,                20.72130012512207,                9485.490234375
+<ObjectOrientation>	0, 0,			0
+<ObjectAttachment>	Wrench
+<ObjectAttachment>	SledgeHammer
+<ObjectAttachment>	WorkingGloves_Brown
+<ObjectAttachment>	ConstructionHelmet_White
+<ObjectAttachment>	Shirt_BlueCheck
+<ObjectAttachment>	CanvasPants_Blue
+<ObjectAttachment>	WorkingBoots_Grey
+
+<Object> 			SurvivorM_Seth					// Weapon Trader
+<ObjectPosition>	6330.93017578125,                20.742000579833986,                9479.849609375
+<ObjectOrientation>	 -89.99998474121094,                0.0,                0.0
+<ObjectAttachment>	FirefighterAxe
+<ObjectAttachment>	SVD
+<ObjectAttachment>	PSO1Optic
+<ObjectAttachment>	M4A1
+<ObjectAttachment>	M4_RISHndgrd
+<ObjectAttachment>	Universallight
+<ObjectAttachment>	M4_OEBttstck
+<ObjectAttachment>	M68Optic
+<ObjectAttachment>	M4_Suppressor
+<ObjectAttachment>	OMNOGloves_Gray
+<ObjectAttachment>	MilitaryBeret_CDF
+<ObjectAttachment>	PlateCarrierVest
+<ObjectAttachment>	TTsKOJacket_Camo
+<ObjectAttachment>	TTSKOPants
+<ObjectAttachment>	MilitaryBoots_Black
+<ObjectAttachment>	AliceBag_Camo
+
+<Object> 			SurvivorM_Taiki					// Weapon supplies
+<ObjectPosition>	6329.97021484375,                20.766199111938478,                9477.51953125
+<ObjectOrientation>	0, 0,			0
+<ObjectAttachment>	Mag_STANAG_30Rnd
+<ObjectAttachment>	SportGlasses_Orange
+<ObjectAttachment>	BaseballCap_Camo
+<ObjectAttachment>	TacticalShirt_Olive
+<ObjectAttachment>	SmershVest
+<ObjectAttachment>	BDUPants
+<ObjectAttachment>	TTSKOBoots
+<ObjectAttachment>	AssaultBag_Ttsko
+
+<Object> 			SurvivorF_Frida					// Clothing
+<ObjectPosition>	6331.81005859375,                20.747699737548829,                9472.919921875
+<ObjectOrientation>	-129.99998474121095,                0.0,                0.0
+<ObjectAttachment>	ThickFramesGlasses
+<ObjectAttachment>	WomanSuit_Black
+<ObjectAttachment>	SlacksPants_Black
+<ObjectAttachment>	DressShoes_Black
+
+<Object> 			SurvivorM_Peter					// vehicles
+<ObjectPosition>	 6331.1201171875,                20.649999618530275,                9488.5
+<ObjectOrientation>	 -129.99998474121095,                0.0,                0.0
+<ObjectAttachment>	LugWrench
+<ObjectAttachment>	WorkingGloves_Black
+<ObjectAttachment>	ReflexVest
+<ObjectAttachment>	JumpsuitJacket_Blue
+<ObjectAttachment>	JumpsuitPants_Blue
+<ObjectAttachment>	HikingBootsLow_Blue
+
+<Object>			Land_Mil_Tent_Big1_1
+<ObjectPosition>	6329.25,                20.634000778198243,                9486.9296875
+<ObjectOrientation>	 89.9513931274414,                0.0,                0.0
+ 
+<Object>			Land_Mil_Tent_Big1_2
+<ObjectPosition>	6329.10986328125,                20.7091007232666,                9479.01953125
+<ObjectOrientation>	91.32878112792969,                0.0,                0.0
+ 
+<Object>			Land_Mil_Tent_Big1_3
+<ObjectPosition>	 6329.16015625,                20.737899780273439,                9471.2802734375
+<ObjectOrientation>	 89.40269470214844,                0.0,                0.0
+
+<Object>			Land_Misc_Toilet_Mobile
+<ObjectPosition>	6332.10986328125,                21.899999618530275,                9465.9501953125
+<ObjectOrientation>	 89.11199188232422,                0.0,                0.0
+ 
+<Object>			Land_Misc_Toilet_Mobile
+<ObjectPosition>	 6331.990234375,                21.945899963378908,                9464.4599609375
+<ObjectOrientation>	    91.45098876953125,                0.0,                0.0
+ 
+<Object>			BarrelHoles_Red
+<ObjectPosition>	 6324.22998046875,                20.67770004272461,                9482.990234375
+<ObjectOrientation>	0.0,                0.0,                0.0
+
+<Object>			BarrelHoles_Red
+<ObjectPosition>	 6323.39013671875,                20.68899917602539,                9475.419921875
+<ObjectOrientation>	0.0,                0.0,                0.0
+ 
+<Object>			Land_RoadCone
+<ObjectPosition>	 6313.02001953125,                20.76609992980957,                9493.8603515625
+<ObjectOrientation>		0.0,                0.0,                0.0
+ 
+ <Object>			Land_RoadCone
+ <ObjectPosition>	   6313.2001953125,                20.786800384521486,                9488.919921875
+ <ObjectOrientation>	 0.0,                0.0,                0.0
+ 
+ <Object>			Land_RoadCone
+ <ObjectPosition>	 6319.759765625,                20.66939926147461,                9488.83984375
+ <ObjectOrientation>	 0.0,                0.0,                0.0
+ 
+ <Object>			Land_RoadCone
+ <ObjectPosition>	  6319.68994140625,                20.52910041809082,                9494.33984375
+ <ObjectOrientation>	 0.0,                0.0,                0.0
+ 
+
+
+//<OpenFile> FileName.txt								// Links to another File; Must be right above <FileEnd>!
+<FileEnd>												// This has to be on the End of this File and is very importand!
